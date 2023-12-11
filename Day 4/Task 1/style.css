@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  list-style: none;
+}
+
+body {
+  padding: 0px 98px;
+}
+
+.head {
+  margin-bottom: 50px;
+}
+
+.head p {
+  font-size: 80px;
+  font-weight: 400;
+}
+
+.head p span {
+  color: #4bcaff;
+  font-size: 80px;
+  font-weight: 400;
+}
+
+.top-menu {
+  margin-top: 30px;
+  background-color: #35444f;
+}
+
+.top-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-menu .top-menu-content {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.top-menu .top-menu-content a {
+  text-decoration: none;
+  color: #fff;
+  border-left: 1px solid white;
+  text-align: center;
+  padding: 26px 38px 20px 38px;
+  display: inline-block;
+}
+
+.top-menu-content a:hover {
+  background-color: #182025;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  max-width: 1000px;
+}
+
+.top-img {
+  border: 1px solid black;
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 530px;
+}
+
+.top-img img {
+  width: 50%;
+  height: 75%;
+}
+
+.main-content .content p {
+  margin-bottom: 14px;
+  font-size: 16px;
+}
+
+.container .left-menu-bar {
+  border: 1px solid black;
+  margin-right: 20px;
+  padding-right: 40px;
+}
+
+.container .left-menu-bar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.left-menu-bar ul li {
+  width: 100%;
+}
+
+.left-menu-bar ul li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 13px 20px;
+}
+
+.left-menu-bar ul li a span {
+  display: inline-block;
+}
+
+.left-menu-bar ul li a:hover {
+  background: #dbdbdb;
+}
+
+.left-menu-bar ul li a:hover span {
+  transform: translateX(10px);
+}
+
+.main-content {
+  margin-left: 20px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.922);
+  padding: 16px;
+}
+
+.links {
+  display: flex;
+}
+
+.links div {
+  margin-right: 16px;
+}
+
+.copy-right {
+  margin-left: 16px;
+}
+
+.bottom a {
+  text-decoration: none;
+  color: black;
+}
+
+.bottom a:hover {
+  text-decoration: underline;
+  color: #3181a6;
+}

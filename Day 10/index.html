@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day 10</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="container">
+      <div class="form-container">
+        <p class="header">FORM</p>
+        <form action="" class="main-form" id="main-form">
+          <div class="abstractForm">
+            <!-- Username Input -->
+            <div class="form-group">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="21" viewBox="0 0 17 21" fill="none"
+                class="usernameicon icon">
+                <path
+                  d="M10.3214 12.491H6.67857C2.99018 12.491 0 15.4731 0 19.1515C0 19.8202 0.543772 20.3625 1.21429 20.3625H15.7857C16.4562 20.3625 17 19.8202 17 19.1515C17 15.4731 14.0098 12.491 10.3214 12.491ZM1.859 18.546C2.15877 16.158 4.20446 14.3075 6.67857 14.3075H10.3214C12.794 14.3075 14.8408 16.1599 15.1406 18.546H1.859ZM8.5 10.6745C11.1824 10.6745 13.3571 8.50564 13.3571 5.83046C13.3571 3.15528 11.1824 0.98645 8.5 0.98645C5.81757 0.98645 3.64286 3.15528 3.64286 5.83046C3.64286 8.50602 5.81719 10.6745 8.5 10.6745ZM8.5 2.80295C10.1738 2.80295 11.5357 4.16117 11.5357 5.83046C11.5357 7.49975 10.1738 8.85797 8.5 8.85797C6.82618 8.85797 5.46429 7.49937 5.46429 5.83046C5.46429 4.16117 6.82656 2.80295 8.5 2.80295Z"
+                  fill="#5D5FEF" />
+              </svg>
+              <input type="text" placeholder="UserName" class="UserName" />
+              <div class="error-message"></div>
+            </div>
+
+            <!-- Email Input -->
+            <div class="form-group">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17" fill="none"
+                class="emailicon icon">
+                <path
+                  d="M0 2.93295C0 1.43088 1.1751 0.213501 2.625 0.213501H18.375C19.8229 0.213501 21 1.43088 21 2.93295V13.8107C21 15.3107 19.8229 16.5302 18.375 16.5302H2.625C1.1751 16.5302 0 15.3107 0 13.8107V2.93295ZM1.96875 2.93295V3.872L9.04395 9.88877C9.88887 10.6111 11.1111 10.6111 11.9561 9.88877L19.0312 3.872V2.8947C19.0312 2.55902 18.7359 2.21484 18.375 2.21484H2.625C2.26242 2.21484 1.96875 2.55902 1.96875 2.8947V2.93295ZM1.96875 6.51071V13.8107C1.96875 14.1846 2.26242 14.4906 2.625 14.4906H18.375C18.7359 14.4906 19.0312 14.1846 19.0312 13.8107V6.51071L13.207 11.4652C11.632 12.8037 9.36797 12.8037 7.75605 11.4652L1.96875 6.51071Z"
+                  fill="#5D5FEF" />
+              </svg>
+              <input type="email" placeholder="E-mail" class="UserName" />
+              <div class="error-message"></div>
+            </div>
+
+            <!-- Password Input -->
+            <div class="form-group">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="21" viewBox="0 0 19 21" fill="none"
+                class="passwordicon icon">
+                <path
+                  d="M11.3258 0.446997C10.0186 0.696857 9.01078 1.27987 7.9231 2.41465C7.26451 3.10177 6.92523 3.54944 6.7057 4.03875C6.2367 5.0486 5.98723 6.1938 5.98723 7.35982V8.35926L2.99362 11.4825L0 14.6162V17.1252C0 19.6342 0 19.6447 0.239489 19.9362L0.478978 20.2277H2.94372H5.40847L5.64795 19.9362C5.85751 19.6759 5.88744 19.551 5.88744 18.7181V17.8019L6.83542 17.7603C8.1127 17.7186 8.21249 17.6145 8.28234 16.2924L8.33223 15.3345L9.25027 15.2825L10.1783 15.2304L10.777 14.6058L11.3857 13.9811L12.4035 13.9707C14.3494 13.9499 15.8562 13.3148 17.1035 12.0031C17.9218 11.1494 18.3608 10.4102 18.74 9.32747C18.9695 8.66118 18.9995 8.40091 18.9995 7.21407C19.0095 5.68367 18.8797 5.07984 18.291 3.90341C17.8819 3.10177 16.874 1.9774 16.0657 1.42562C14.6887 0.49905 12.9624 0.145081 11.3258 0.446997ZM13.8105 2.33137C15.1377 2.68534 16.2454 3.64314 16.8341 4.9445C17.5126 6.41243 17.5126 7.91159 16.8341 9.38994C15.8861 11.4721 13.8105 12.4924 11.3558 12.0655L10.8868 11.9822L10.2182 12.6902L9.53965 13.4085L8.04285 13.4294L6.53606 13.4606L6.50612 14.6891L6.47619 15.9071H5.28872H4.09127V17.1565V18.4058H2.89383H1.69638V16.8649V15.3241L4.79976 12.1072L7.90314 8.89022L7.79338 7.98447C7.39423 4.76751 9.44985 2.21685 12.4634 2.1752C12.8626 2.16479 13.4713 2.23767 13.8105 2.33137Z"
+                  fill="#5D5FEF" />
+                <path
+                  d="M13.172 4.82999C12.2939 5.21519 12.4236 6.77682 13.3517 7.06832C14.1899 7.3286 14.8684 6.79764 14.8684 5.8919C14.8684 5.46505 14.8185 5.32971 14.579 5.06944C14.4194 4.90286 14.2298 4.75711 14.15 4.75711C13.651 4.70506 13.4315 4.72588 13.172 4.82999Z"
+                  fill="#5D5FEF" />
+              </svg>
+              <input type="password" placeholder="Password" class="UserName password" />
+              <img src="" id="icon" />
+              <div class="bottom">
+                <div class="error-message"></div>
+                <div class="line">
+                  <div style="background-color: #e74a3b"></div>
+                  <div style="background-color: #f6c23e"></div>
+                  <div style="background-color: #3cbc81"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Country Dropdown -->
+            <div class="form-group">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"
+                class="countryicon icon">
+                <g clip-path="url(#clip0_36_133)">
+                  <path
+                    d="M14.4375 10.5C14.4375 11.4105 14.3883 12.2883 14.3021 13.125H6.69785C6.61172 12.2883 6.52559 11.4105 6.52559 10.5C6.52559 9.58945 6.61172 8.71172 6.69785 7.875H14.3021C14.3883 8.71172 14.4375 9.58945 14.4375 10.5ZM20.6678 7.875C20.8852 8.71582 21 9.59355 21 10.5C21 11.4064 20.8852 12.2842 20.6678 13.125H15.6187C15.7049 12.2801 15.75 11.3654 15.75 10.5C15.75 9.59766 15.7049 8.71992 15.6187 7.875H20.6678ZM20.2371 6.5625H15.4506C15.0404 3.94324 14.2283 1.74809 13.1824 0.346254C16.398 1.19314 19.0066 3.52488 20.2371 6.5625ZM14.1217 6.5625H6.87832C7.12852 5.06953 7.51406 3.74801 7.98574 2.68037C8.41641 1.71199 8.89629 1.00939 9.35977 0.566426C9.81914 0.130348 10.2006 0 10.5 0C10.7994 0 11.1809 0.130348 11.6402 0.566426C12.1037 1.00939 12.5836 1.71199 13.0143 2.68037C13.4859 3.74801 13.8715 5.06953 14.1217 6.5625ZM0.763301 6.5625C1.99295 3.52488 4.60195 1.19314 7.81758 0.346254C6.77168 1.74809 5.95957 3.94324 5.54941 6.5625H0.763301ZM5.38125 7.875C5.29512 8.71992 5.21309 9.59766 5.21309 10.5C5.21309 11.3654 5.29512 12.2801 5.38125 13.125H0.330791C0.114844 12.2842 0 11.4064 0 10.5C0 9.59355 0.114844 8.71582 0.330791 7.875H5.38125ZM7.98574 18.3176C7.51406 17.2512 7.12852 15.9305 6.87832 14.4375H14.1217C13.8715 15.9305 13.4859 17.2512 13.0143 18.3176C12.5836 19.2896 12.1037 19.991 11.6402 20.434C11.1809 20.8687 10.7994 21 10.4631 21C10.2006 21 9.81914 20.8687 9.35977 20.434C8.89629 19.991 8.41641 19.2896 7.98574 18.3176ZM7.81758 20.6555C4.60195 19.8064 1.99295 17.4768 0.763301 14.4375H5.54941C5.95957 17.0584 6.77168 19.2527 7.81758 20.6555ZM13.1824 20.6555C14.2283 19.2527 15.0404 17.0584 15.4506 14.4375H20.2371C19.0066 17.4768 16.398 19.8064 13.1824 20.6555Z"
+                    fill="#5D5FEF" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_36_133">
+                    <rect width="21" height="21" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <select id="country" name="country" class="UserName">
+                <option value="" disabled selected hidden>Country</option>
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="australia">Australia</option>
+                <!-- Add more options as needed -->
+              </select>
+              <div class="error-message"></div>
+            </div>
+          </div>
+
+          <!-- Level of development -->
+          <p class="subheader">Level of development</p>
+          <div class="levelForm">
+            <div class="leveldiv">
+              <input type="radio" name="radio-input" id="basic" required />
+              <label for="basic">Basic</label>
+            </div>
+            <div class="leveldiv">
+              <input type="radio" name="radio-input" id="medium" required />
+              <label for="medium">Medium</label>
+            </div>
+            <div class="leveldiv">
+              <input type="radio" name="radio-input" id="advanced" required />
+              <label for="advanced">Advanced</label>
+            </div>
+          </div>
+
+          <!-- Programming skills -->
+          <p class="subheader">Programming skills</p>
+          <div class="languageForm">
+            <div class="leveldiv">
+              <input type="checkbox" name="Java" id="Java" />
+              <label for="Java">Java</label>
+            </div>
+            <div class="leveldiv">
+              <input type="checkbox" name="Python" id="Python" />
+              <label for="Python">Python</label>
+            </div>
+            <div class="leveldiv">
+              <input type="checkbox" name="JavaScript" id="JavaScript" />
+              <label for="JavaScript">JavaScript</label>
+            </div>
+          </div>
+
+          <!-- Send Button -->
+          <input type="submit" value="Send" class="send-btn" />
+        </form>
+      </div>
+    </div>
+    <div class="picture-container">
+      <!-- <img src="Capture.PNG" alt=""> -->
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

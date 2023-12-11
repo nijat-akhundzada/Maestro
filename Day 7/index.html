@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <p class="header">To Do List</p>
+        <div class="list">
+            <form>
+                <div class="input-group">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" id="title">
+                </div>
+                <div class="input-group">
+                    <label for="priority">Priority</label>
+                    <select name="priority" id="priority">
+                        <option value="" disabled hidden selected></option>
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                    </select>
+                </div>
+                <button id="addButton">Add new <span>+</span></button>
+            </form>
+            <div id="list-items">
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

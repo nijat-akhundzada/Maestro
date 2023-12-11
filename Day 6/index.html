@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 6</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .container img {
+        margin-top: 70px;
+        margin-left: 80px;
+        width: 500px;
+        height: 500px;
+        flex-shrink: 0;
+      }
+
+      .container {
+        width: 100%px;
+        height: 736px;
+        flex-shrink: 0;
+      }
+
+      .container .calculator {
+        position: relative;
+        top: -470px;
+        right: -390px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        background: #323232;
+        box-shadow: -5px 5px 8px 0px rgba(0, 0, 0, 0.3);
+        width: 300px;
+        height: 500px;
+        padding: 20px;
+      }
+
+      .container .display {
+        height: 50px;
+        border-bottom: 1px solid aqua;
+      }
+
+      .container .calculator input {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: none;
+        margin: 5px;
+        font-size: 30px;
+        font-weight: 400;
+      }
+
+      .dif-btn {
+        background-color: #74ebd5;
+        color: white;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      .calculator .display {
+        margin-bottom: 10px;
+        color: #ffffff;
+        padding: 28px 20px 80px 20px;
+      }
+
+      .calculator .display .expression {
+        text-align: right;
+        margin-bottom: 10px;
+      }
+
+      .calculator .display .equal-sign {
+        display: inline-block;
+      }
+
+      .calculator .display .result {
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 24px;
+      }
+
+      .display div {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="img"><img src="Vector 1.png" alt="" /></div>
+      <div class="calculator">
+        <form>
+          <div class="display">
+            <p class="expression"></p>
+            <div>
+              <p class="equal-sign"></p>
+              <p class="result"></p>
+            </div>
+          </div>
+          <div>
+            <input
+              type="button"
+              value="C"
+              class="dif-btn"
+              onclick="
+                    document.querySelector('.expression').innerText=' '
+                    document.querySelector('.equal-sign').innerText=' '
+                    document.querySelector('.result').innerText=' '
+                    "
+            />
+            <input
+              type="button"
+              value="/"
+              class="dif-btn"
+              onclick="
+                    document.querySelector('.expression').innerHTML+=' / '
+                        "
+            />
+            <input
+              type="button"
+              value="%"
+              class="dif-btn"
+              onclick="
+                    document.querySelector('.expression').innerHTML+=' % '
+                    const expEl = document.querySelector('.expression');
+                        const exp = expEl.innerText;
+                        const modifiedExp = exp.replace(/%/g, '/100*');                        "
+            />
+            <input
+              type="button"
+              value="X"
+              class="dif-btn"
+              onclick="
+                    document.querySelector('.expression').innerHTML+=' X '
+                        "
+            />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="7"
+              onclick="
+                    document.querySelector('.expression').innerHTML+='7'
+                        "
+            />
+            <input
+              type="button"
+              value="8"
+              onclick="
+                    document.querySelector('.expression').innerHTML+='8'
+                        "
+            />
+            <input
+              type="button"
+              value="9"
+              onclick="
+                    document.querySelector('.expression').innerHTML+='9'
+                        "
+            />
+            <input
+              type="button"
+              value="&plusmn;"
+              class="dif-btn"
+              onclick="
+                    let temp =document.querySelector('.result').innerHTML
+                    document.querySelector('.expression').innerText=' '
+                    document.querySelector('.equal-sign').innerText=' '
+                    document.querySelector('.result').innerText=' '
+                    document.querySelector('.result').innerHTML=`${Number(temp)*-1}`
+                        "
+            />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="4"
+              onclick="
+                    document.querySelector('.expression').innerHTML+='4'
+                        "
+            />
+            <input
+              type="button"
+              value="5"
+              onclick="
+                    document.querySelector('.expression').innerHTML+='5'
+                        "
+            />
+            <input
+              type="button"
+              value="6"
+              onclick="
+                    document.querySelector('.expression').innerHTML+='6'
+                        "
+            />
+            <input
+              type="button"
+              value="-"
+              class="dif-btn"
+              onclick="
+                    document.querySelector('.expression').innerHTML+=' - '
+                        "
+            />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="1"
+              onclick="
+                    document.querySelector('.expression').innerHTML+='1'
+                        "
+            />
+            <input
+              type="button"
+              value="2"
+              onclick="
+                    document.querySelector('.expression').innerHTML+='2'
+                        "
+            />
+            <input
+              type="button"
+              value="3"
+              onclick="
+                    document.querySelector('.expression').innerHTML+='3'
+                        "
+            />
+            <input
+              type="button"
+              value="+"
+              class="dif-btn"
+              onclick="
+                    document.querySelector('.expression').innerHTML+=' + '
+                        "
+            />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="."
+              onclick="
+                        const expressEl = document.querySelector('.expression')
+                        const express = expressEl.innerText
+                        if (express.indexOf('.') === -1) {
+                            expressEl.innerHTML += '.'
+                        }
+
+                        "
+            />
+            <input
+              type="button"
+              value="0"
+              onclick="
+                    document.querySelector('.expression').innerHTML+='0'
+                        "
+            />
+            <input
+              type="button"
+              value="&larr;"
+              class="dif-btn"
+              onclick="
+                    document.querySelector('.expression').innerHTML = document.querySelector('.expression').innerHTML.toString().slice(0,-1)
+                        "
+            />
+            <input
+              type="button"
+              value="="
+              class="dif-btn"
+              onclick="
+                       const expressionElement = document.querySelector('.expression');
+    const expression = expressionElement.innerText;
+    
+    let modifiedExpression = expression.replace(/X/g, '*');
+    document.querySelector('.equal-sign').innerHTML = '=';
+    modifiedExpression = expression.replace(/%/g, '/100*');                        
+    const result = eval(modifiedExpression);
+    document.querySelector('.result').innerHTML = result;
+                        "
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

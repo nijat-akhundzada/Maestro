@@ -1,0 +1,104 @@
+{
+  "holidays": [
+    {
+      "date": "January, 01",
+      "description": "New Year's Day",
+      "type": "public"
+    },
+    {
+      "date": "January, 02",
+      "description": "New Year's Day",
+      "type": "public"
+    },
+    {
+      "date": "January, 20",
+      "description": "Ümumxalq Hüzn Günü",
+      "type": "public"
+    },
+    {
+      "date": "March, 08",
+      "description": "Beynəlxalq Qadınlar Günü",
+      "type": "public"
+    },
+    {
+      "date": "March, 20",
+      "description": "Novruz bayramı",
+      "type": "public"
+    },
+    {
+      "date": "March, 21",
+      "description": "Novruz bayramı",
+      "type": "public"
+    },
+    {
+      "date": "March, 22",
+      "description": "Novruz bayramı",
+      "type": "public"
+    },
+    {
+      "date": "March, 23",
+      "description": "Novruz bayramı",
+      "type": "public"
+    },
+    {
+      "date": "March, 24",
+      "description": "Novruz bayramı",
+      "type": "public"
+    },
+    {
+      "date": "April, 21",
+      "description": " Ramazan bayramı",
+      "type": "public"
+    },
+    {
+      "date": "April, 22",
+      "description": " Ramazan bayramı",
+      "type": "public"
+    },
+    {
+      "date": "May, 9",
+      "description": "Faşizm üzərində Qələbə Günü",
+      "type": "public"
+    },
+    {
+      "date": "May, 28",
+      "description": "Azərbaycanın Müstəqillik Günü",
+      "type": "public"
+    },
+    {
+      "date": "June, 15",
+      "description": "Milli Qurtuluş Günü",
+      "type": "public"
+    },
+    {
+      "date": "June, 26",
+      "description": "Azərbaycan Silahlı Qüvvələri günü",
+      "type": "public"
+    },
+    {
+      "date": "June, 28",
+      "description": "Qurban bayramı",
+      "type": "public"
+    },
+    {
+      "date": "June, 29",
+      "description": "Qurban bayramı",
+      "type": "public"
+    },
+    {
+      "date": "November, 08",
+      "description": "Qələbə günü",
+      "type": "public"
+    },
+    {
+      "date": "November, 09",
+      "description": "Azərbaycanın Dövlət Bayrağı Günü",
+      "type": "republic"
+    },
+    {
+      "date": "December, 31",
+      "description": "Dünya Azərbaycanlılarının Həmrəyliyi Günü",
+      "type": "public"
+    }
+  ]
+}

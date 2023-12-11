@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+        }
+
+        body {
+            background-color: rgb(48, 47, 47);
+        }
+
+        .nav {
+            padding-top: 18px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border-bottom: 2px solid gold;
+            background-color: black;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .header p {
+            color: rgb(255, 157, 0);
+        }
+
+        .header span {
+            color: rgb(246, 255, 0);
+            font-size: xx-large;
+        }
+
+        .page-links {
+            display: flex;
+        }
+
+        .page-links a {
+            text-decoration: none;
+            margin: 10px;
+            color: rgb(255, 157, 0);
+        }
+
+        .home-btn {
+            border: 1px solid gold;
+            border-radius: 5px 5px 0px 0px;
+            height: 38px;
+            border-bottom: none;
+            background-color: rgb(48, 47, 47);
+            position: relative;
+            bottom: -1.5px;
+        }
+
+        .home-btn a {
+            color: rgb(246, 255, 0);
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            padding-top: 3rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title p {
+            color: rgb(255, 157, 0);
+            font-size: larger;
+            font-weight: 24px;
+        }
+
+        .description p {
+            color: rgb(246, 255, 0);
+            margin-bottom: 26px;
+        }
+
+        .text {
+            margin-bottom: 26px;
+        }
+
+        .content button {
+            background-color: rgb(255, 157, 0);
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 8px 24px;
+            font-weight: bold;
+        }
+
+        .team-info,
+        .products-info {
+            text-align: right;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        form input {
+            border-radius: 5px;
+            border: 2px solid rgb(255, 157, 0);
+            background-color: rgb(78, 61, 61);
+            padding: 10px;
+        }
+
+        .send-btn {
+            background-color: rgb(255, 157, 0);
+            color: white;
+            width: 50px;
+            padding: 0;
+            padding: 4px;
+        }
+
+        .icons img {
+            width: 30px;
+            height: 30px;
+
+
+        }
+
+        .container .img {
+            background-color: rgb(33, 33, 33);
+            padding: 30px;
+            border: 2px solid rgba(255, 157, 0, 0.2);
+            border-radius: 20px;
+            width: fit-content;
+            height: fit-content;
+            justify-self: center;
+        }
+
+        textarea {
+            border: 2px solid rgb(255, 157, 0);
+            border-radius: 5px;
+            background-color: rgb(78, 61, 61);
+            padding-bottom: 60px;
+
+        }
+
+        .container img {
+            border-radius: 5px;
+            object-fit: contain;
+            object-position: center;
+        }
+
+        .img-border {
+            border: 1px solid rgb(255, 157, 0);
+        }
+
+        .form {
+            height: 100%;
+        }
+
+
+
+        @media (max-width: 768px) {
+            .container {
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 0 20px;
+                gap: 20px;
+            }
+
+            .nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+
+            .container .img {
+                width: 100%;
+
+            }
+
+            .container img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .icons img {
+                width: 30px;
+                height: 30px;
+
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 10px;
+            }
+
+            .nav {
+                padding: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="header">
+            <p>THE</p>
+            <span>BROWNIE</span>
+        </div>
+        <div class="page-links">
+            <div class="home-btn"><a href="">HOME</a></div>
+            <div class="about-btn"><a href="">ABOUT</a></div>
+            <div class="services-btn"><a href="">SERVICES</a></div>
+            <div class="products-btn"><a href="">PRODUCTS</a></div>
+            <div class="contact-btn"><a href="">CONTACT</a></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="img">
+            <img src="velopic.PNG" alt="">
+        </div>
+        <div class="content">
+            <div class="title">
+                <p>DUIS SED ODIO AMET</p>
+            </div>
+            <div class="description">
+                <p> CLASS APENT TACIT SIOUTIS MAURIS JUST OLMORBI
+                </p>
+            </div>
+            <div class="text">
+                <p> The Brownie is free responsive template from <span style="color: aquamarine;">template</span><span
+                        style="color: rgb(37, 242, 37);">mo</span>.com website. You
+                    can use this layout for any of your website. Please spread a word about us. Thank you. This template
+                    uses CSS Flexbox, which supported on IE 10+ and recent versions of all other major browsers. Check
+                    out <span style="color: aqua;">canIuse.com</span> for detailed browser support information.
+                </p>
+            </div>
+            <button>LOREM IPSUM</button>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="team-info">
+            <div class="title">
+                <p>MEET OUR CREATIVE <span style="color: rgb(246, 255, 0); font-weight: bold;">TEAM</span></p>
+            </div>
+            <div class="text">
+                <p> The Brownie is free responsive template from <span style="color: aquamarine;">template</span><span
+                        style="color: rgb(37, 242, 37);">mo</span>.com website. You
+                    can use this layout for any of your website. Please spread a word about us. Thank you. This template
+                    uses CSS Flexbox, which supported on IE 10+ and recent versions of all other major browsers. Check
+                    out <span style="color: aqua;">canIuse.com</span> for detailed browser support information.
+                </p>
+            </div>
+        </div>
+        <div class="img">
+            <img class="img-border" src="teampic.PNG" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <div class="img">
+            <img class="img-border" src="planspic.PNG" alt="">
+        </div>
+        <div class="plans-info">
+            <div class="title">
+                <p>POWERFUL CREATIVE <span style="color: rgb(246, 255, 0); font-weight: bold;">DESIGN</span></p>
+            </div>
+            <div class="text">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic quae consequuntur iusto harum vitae
+                    dicta earum quam eligendi velit placeat!</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="products-info">
+            <div class="title">
+                <p>THE BEST QUALITY <span style="color: rgb(246, 255, 0); font-weight: bold;">PRODUCTS</span></p>
+            </div>
+            <div class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt nulla debitis commodi incidunt
+                ipsam doloribus laudantium dolorum provident, beatae quidem nemo velit odio, facere doloremque aut?
+                Ipsum perspiciatis eum, veniam cupiditate suscipit a ipsam tempore cum? Facere, suscipit est.
+            </div>
+        </div>
+        <div class="img">
+            <img class="img-border" src="productpic.PNG" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <div class="img form">
+            <form action="">
+                <input type="text" name="name" id="name" placeholder="Name...">
+                <input type="email" name="email" id="email" placeholder="Email...">
+                <input type="text" name="subject" id="subject" placeholder="Subject...">
+                <textarea name="message" id="message" placeholder="Message..."></textarea>
+                <input class=" send-btn" type="submit" name="submit" id="submit" value="SEND">
+            </form>
+            <p></p>
+        </div>
+        <div class="social-info">
+            <div class="title">
+                <p>GET IN <span>TOUCH</span></p>
+            </div>
+            <div class="text">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, amet aperiam minima praesentium
+                    voluptates culpa doloribus repellendus, cupiditate aspernatur accusantium nobis laudantium, ipsum
+                    iste iusto placeat enim maiores distinctio! Optio sapiente, perspiciatis non magni quo deleniti
+                    accusamus quaerat eligendi blanditiis.</p>
+            </div>
+            <div class="icons">
+                <img src="facebookicon.png" alt="">
+                <img src="twittericon.png" alt="">
+                <img src="g+icon.png" alt="">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

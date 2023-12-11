@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+#imageContainer {
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+img {
+    border: 1px solid  black;
+}

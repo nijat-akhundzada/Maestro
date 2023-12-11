@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Roboto;
+    }
+
+    .status-bar {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+    }
+
+    .status-bar p {
+        color: #000;
+        text-align: center;
+        font-family: SF Pro Text;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.333px;
+    }
+
+    .title {
+        display: flex;
+        padding: 11px 0px;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid grey;
+    }
+
+    .title p {
+        color: #000;
+        text-align: center;
+        font-family: SF Pro Text;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px;
+        /* 129.412% */
+        letter-spacing: -0.408px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border-bottom: 1px solid grey;
+        padding: 28px;
+    }
+
+    .content-message {
+        margin-left: 20px;
+    }
+
+    .user-name {
+        color: #000;
+        font-family: Roboto;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px;
+        margin-bottom: 10px;
+        /* 138.462% */
+    }
+
+    .bottom {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        padding-top: 10px;
+    }
+
+    .bottom div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .home-btn {
+        width: 135px;
+        height: 5px;
+        border-radius: 10px;
+        background: #000;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 1px;
+    }
+</style>
+
+<body>
+    <div class="status-bar">
+        <p>9:27</p>
+        <div class="icons">
+            <img src="Cellular Connection.png" alt="">
+            <img src="Wifi.png" alt="">
+            <img src="Battery.png" alt="">
+        </div>
+    </div>
+    <div class="title">
+        <p>Chats</p>
+    </div>
+    <div class="container">
+        <div class="content">
+            <img src=" Ellipse.png" alt="">
+            <div class="content-message">
+                <p class="user-name">
+                    James
+                </p>
+                <p class=user-message>Thank you! That was very helpful!</p>
+            </div>
+        </div>
+        <div class="content">
+            <img src="Ellipse (1).png" alt="">
+            <div class="content-message">
+                <p class="user-name">
+                    Will Kenny
+                </p>
+                <p class=user-message>I know... I'm trying to get the funds.</p>
+            </div>
+        </div>
+        <div class="content">
+            <img src="Ellipse (2).png" alt="">
+            <div class="content-message">
+                <p class="user-name">
+                    Beth Williams
+                </p>
+                <p class=user-message>I'm looking for tips around capturing the milky way. I have a 6D with a 24-100mm..
+                </p>
+            </div>
+        </div>
+        <div class="content">
+            <img src="Ellipse (3).png" alt="">
+            <div class="content-message">
+                <p class="user-name">
+                    Rev Shawn
+                </p>
+                <p class=user-message>Wanted to ask if you're available for a portrait shoot next week.</p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div>
+            <img src="home.png" alt="">
+            <img src="search.png" alt="">
+            <img src="new.png" alt="">
+            <img src="Comment.png" alt="">
+            <img src="bell.png" alt="">
+        </div>
+        <div class="home-btn">
+
+        </div>
+    </div>
+</body>
+
+</html>

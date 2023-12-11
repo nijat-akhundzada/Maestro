@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 3</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .top {
+            position: relative;
+            background-color: rgb(200, 183, 216);
+            padding-top: 172px;
+        }
+
+        svg {
+            transform: translateY(3px);
+        }
+
+        .circle1 {
+            background-color: #F5F3FF;
+            height: 120px;
+            width: 240px;
+            border-radius: 240px 240px 0 0;
+            position: absolute;
+            left: 20px;
+            bottom: -10px;
+            transform: translateX(-50%);
+        }
+
+        .circle2 {
+            background-color: #F5F3FF;
+            height: 120px;
+            width: 240px;
+            border-radius: 240px 240px 0 0;
+            position: absolute;
+            right: 20px;
+            bottom: -10px;
+            transform: translateX(50%);
+        }
+
+        .inner-circle {
+            background-color: orange;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: relative;
+            right: -40px;
+            bottom: -40px;
+        }
+
+        h1 {
+            padding-left: 100px;
+            padding-bottom: 30px;
+            position: relative;
+            z-index: 5;
+        }
+
+        /* main content */
+
+        .container {
+            margin-top: 60px;
+            position: relative;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            justify-content: center;
+            align-items: center;
+            column-gap: 10px;
+            margin: 0 20px 16px 20px;
+            row-gap: 20px;
+        }
+
+
+        .grid:first-child {
+            margin: -80px 20px 16px 20px;
+        }
+
+        .grid-column {
+            padding: 10px;
+        }
+
+        .content {
+            margin-top: 134px;
+            background-color: white;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .content h3 {
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            color: grey;
+            margin-bottom: 8px;
+        }
+
+        .content a {
+            text-decoration: none;
+            color: blueviolet;
+        }
+
+        .cell1 {
+            border-radius: 6px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(Rectangle\ 14.png);
+        }
+
+        .cell2 {
+            border-radius: 6px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(Rectangle\ 14\ \(1\).png);
+        }
+
+        .cell3 {
+            border-radius: 6px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(Rectangle\ 14\ \(2\).png);
+        }
+
+        .cell4 {
+            border-radius: 6px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(Rectangle\ 14\ \(3\).png);
+        }
+
+        .cell5 {
+            border-radius: 6px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(Rectangle\ 14\ \(4\).png);
+        }
+
+        .cell6 {
+            border-radius: 6px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(Rectangle\ 14.png);
+        }
+
+        .cell7 {
+            border-radius: 6px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(Rectangle\ 14\ \(2\).png);
+        }
+
+        .cell8 {
+            border-radius: 6px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(Rectangle\ 14\ \(1\).png);
+        }
+
+        .cell9 {
+            border-radius: 6px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(Rectangle\ 14\ \(6\).png);
+        }
+
+
+        @media (max-width: 768px) {
+            .circle1 {
+                height: 80px;
+                width: 160px;
+            }
+
+            .circle2 {
+                height: 80px;
+                width: 160px;
+            }
+
+            .inner-circle {
+                width: 20px;
+                height: 20px;
+                right: -20px;
+                bottom: -20px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <h1>Home repair</h1>
+        <div class="circle1"></div>
+        <div class="circle2">
+            <div class="inner-circle"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="grid">
+            <div class="grid-column cell1">
+                <div class="content">
+                    <h3>Plumbing repair</h3>
+                    <p>
+                        Are you looking for a plumber? Plumbing pros provide affordable
+                        services for all your home...!
+                    </p>
+                    <a href="">Book Now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M0.5 8C0.5 9.63559 0.588291 10.9158 0.811654 11.9208C1.03376 12.9202 1.3827 13.6166 1.88305 14.1169C2.3834 14.6173 3.0798 14.9662 4.07916 15.1883C5.08421 15.4117 6.36441 15.5 8 15.5C9.63559 15.5 10.9158 15.4117 11.9208 15.1883C12.9202 14.9662 13.6166 14.6173 14.1169 14.1169C14.6173 13.6166 14.9662 12.9202 15.1883 11.9208C15.4117 10.9158 15.5 9.63559 15.5 8C15.5 6.36441 15.4117 5.08421 15.1883 4.07916C14.9662 3.07979 14.6173 2.3834 14.1169 1.88305C13.6166 1.3827 12.9202 1.03376 11.9208 0.811654C10.9158 0.588291 9.63559 0.5 8 0.5C6.36441 0.5 5.08421 0.588291 4.07916 0.811654C3.0798 1.03376 2.3834 1.3827 1.88305 1.88305C1.3827 2.3834 1.03376 3.07979 0.811654 4.07916C0.588291 5.08421 0.5 6.36441 0.5 8Z"
+                                stroke="#5920BC" stroke-opacity="0.25" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.66671 5.33333L9.33337 8L6.66671 10.6667" stroke="#5920BC" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="grid-column cell2">
+                <div class="content">
+                    <h3>Plumbing repair</h3>
+                    <p>
+                        Are you looking for a plumber? Plumbing pros provide affordable
+                        services for all your home...!
+                    </p>
+                    <a href="">Book Now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M0.5 8C0.5 9.63559 0.588291 10.9158 0.811654 11.9208C1.03376 12.9202 1.3827 13.6166 1.88305 14.1169C2.3834 14.6173 3.0798 14.9662 4.07916 15.1883C5.08421 15.4117 6.36441 15.5 8 15.5C9.63559 15.5 10.9158 15.4117 11.9208 15.1883C12.9202 14.9662 13.6166 14.6173 14.1169 14.1169C14.6173 13.6166 14.9662 12.9202 15.1883 11.9208C15.4117 10.9158 15.5 9.63559 15.5 8C15.5 6.36441 15.4117 5.08421 15.1883 4.07916C14.9662 3.07979 14.6173 2.3834 14.1169 1.88305C13.6166 1.3827 12.9202 1.03376 11.9208 0.811654C10.9158 0.588291 9.63559 0.5 8 0.5C6.36441 0.5 5.08421 0.588291 4.07916 0.811654C3.0798 1.03376 2.3834 1.3827 1.88305 1.88305C1.3827 2.3834 1.03376 3.07979 0.811654 4.07916C0.588291 5.08421 0.5 6.36441 0.5 8Z"
+                                stroke="#5920BC" stroke-opacity="0.25" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.66671 5.33333L9.33337 8L6.66671 10.6667" stroke="#5920BC" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="grid-column cell3">
+                <div class="content">
+                    <h3>Plumbing repair</h3>
+                    <p>
+                        Are you looking for a plumber? Plumbing pros provide affordable
+                        services for all your home...!
+                    </p>
+                    <a href="">Book Now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M0.5 8C0.5 9.63559 0.588291 10.9158 0.811654 11.9208C1.03376 12.9202 1.3827 13.6166 1.88305 14.1169C2.3834 14.6173 3.0798 14.9662 4.07916 15.1883C5.08421 15.4117 6.36441 15.5 8 15.5C9.63559 15.5 10.9158 15.4117 11.9208 15.1883C12.9202 14.9662 13.6166 14.6173 14.1169 14.1169C14.6173 13.6166 14.9662 12.9202 15.1883 11.9208C15.4117 10.9158 15.5 9.63559 15.5 8C15.5 6.36441 15.4117 5.08421 15.1883 4.07916C14.9662 3.07979 14.6173 2.3834 14.1169 1.88305C13.6166 1.3827 12.9202 1.03376 11.9208 0.811654C10.9158 0.588291 9.63559 0.5 8 0.5C6.36441 0.5 5.08421 0.588291 4.07916 0.811654C3.0798 1.03376 2.3834 1.3827 1.88305 1.88305C1.3827 2.3834 1.03376 3.07979 0.811654 4.07916C0.588291 5.08421 0.5 6.36441 0.5 8Z"
+                                stroke="#5920BC" stroke-opacity="0.25" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.66671 5.33333L9.33337 8L6.66671 10.6667" stroke="#5920BC" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></a>
+                </div>
+            </div>
+
+
+            <div class="grid-column cell4">
+                <div class="content">
+                    <h3>Plumbing repair</h3>
+                    <p>
+                        Are you looking for a plumber? Plumbing pros provide affordable
+                        services for all your home...!
+                    </p>
+                    <a href="">Book Now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M0.5 8C0.5 9.63559 0.588291 10.9158 0.811654 11.9208C1.03376 12.9202 1.3827 13.6166 1.88305 14.1169C2.3834 14.6173 3.0798 14.9662 4.07916 15.1883C5.08421 15.4117 6.36441 15.5 8 15.5C9.63559 15.5 10.9158 15.4117 11.9208 15.1883C12.9202 14.9662 13.6166 14.6173 14.1169 14.1169C14.6173 13.6166 14.9662 12.9202 15.1883 11.9208C15.4117 10.9158 15.5 9.63559 15.5 8C15.5 6.36441 15.4117 5.08421 15.1883 4.07916C14.9662 3.07979 14.6173 2.3834 14.1169 1.88305C13.6166 1.3827 12.9202 1.03376 11.9208 0.811654C10.9158 0.588291 9.63559 0.5 8 0.5C6.36441 0.5 5.08421 0.588291 4.07916 0.811654C3.0798 1.03376 2.3834 1.3827 1.88305 1.88305C1.3827 2.3834 1.03376 3.07979 0.811654 4.07916C0.588291 5.08421 0.5 6.36441 0.5 8Z"
+                                stroke="#5920BC" stroke-opacity="0.25" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.66671 5.33333L9.33337 8L6.66671 10.6667" stroke="#5920BC" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="grid-column cell5">
+                <div class="content">
+                    <h3>Plumbing repair</h3>
+                    <p>
+                        Are you looking for a plumber? Plumbing pros provide affordable
+                        services for all your home...!
+                    </p>
+                    <a href="">Book Now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M0.5 8C0.5 9.63559 0.588291 10.9158 0.811654 11.9208C1.03376 12.9202 1.3827 13.6166 1.88305 14.1169C2.3834 14.6173 3.0798 14.9662 4.07916 15.1883C5.08421 15.4117 6.36441 15.5 8 15.5C9.63559 15.5 10.9158 15.4117 11.9208 15.1883C12.9202 14.9662 13.6166 14.6173 14.1169 14.1169C14.6173 13.6166 14.9662 12.9202 15.1883 11.9208C15.4117 10.9158 15.5 9.63559 15.5 8C15.5 6.36441 15.4117 5.08421 15.1883 4.07916C14.9662 3.07979 14.6173 2.3834 14.1169 1.88305C13.6166 1.3827 12.9202 1.03376 11.9208 0.811654C10.9158 0.588291 9.63559 0.5 8 0.5C6.36441 0.5 5.08421 0.588291 4.07916 0.811654C3.0798 1.03376 2.3834 1.3827 1.88305 1.88305C1.3827 2.3834 1.03376 3.07979 0.811654 4.07916C0.588291 5.08421 0.5 6.36441 0.5 8Z"
+                                stroke="#5920BC" stroke-opacity="0.25" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.66671 5.33333L9.33337 8L6.66671 10.6667" stroke="#5920BC" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="grid-column cell6">
+                <div class="content">
+                    <h3>Plumbing repair</h3>
+                    <p>
+                        Are you looking for a plumber? Plumbing pros provide affordable
+                        services for all your home...!
+                    </p>
+                    <a href="">Book Now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M0.5 8C0.5 9.63559 0.588291 10.9158 0.811654 11.9208C1.03376 12.9202 1.3827 13.6166 1.88305 14.1169C2.3834 14.6173 3.0798 14.9662 4.07916 15.1883C5.08421 15.4117 6.36441 15.5 8 15.5C9.63559 15.5 10.9158 15.4117 11.9208 15.1883C12.9202 14.9662 13.6166 14.6173 14.1169 14.1169C14.6173 13.6166 14.9662 12.9202 15.1883 11.9208C15.4117 10.9158 15.5 9.63559 15.5 8C15.5 6.36441 15.4117 5.08421 15.1883 4.07916C14.9662 3.07979 14.6173 2.3834 14.1169 1.88305C13.6166 1.3827 12.9202 1.03376 11.9208 0.811654C10.9158 0.588291 9.63559 0.5 8 0.5C6.36441 0.5 5.08421 0.588291 4.07916 0.811654C3.0798 1.03376 2.3834 1.3827 1.88305 1.88305C1.3827 2.3834 1.03376 3.07979 0.811654 4.07916C0.588291 5.08421 0.5 6.36441 0.5 8Z"
+                                stroke="#5920BC" stroke-opacity="0.25" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.66671 5.33333L9.33337 8L6.66671 10.6667" stroke="#5920BC" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></a>
+                </div>
+            </div>
+
+
+            <div class="grid-column cell7">
+                <div class="content">
+                    <h3>Plumbing repair</h3>
+                    <p>
+                        Are you looking for a plumber? Plumbing pros provide affordable
+                        services for all your home...!
+                    </p>
+                    <a href="">Book Now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M0.5 8C0.5 9.63559 0.588291 10.9158 0.811654 11.9208C1.03376 12.9202 1.3827 13.6166 1.88305 14.1169C2.3834 14.6173 3.0798 14.9662 4.07916 15.1883C5.08421 15.4117 6.36441 15.5 8 15.5C9.63559 15.5 10.9158 15.4117 11.9208 15.1883C12.9202 14.9662 13.6166 14.6173 14.1169 14.1169C14.6173 13.6166 14.9662 12.9202 15.1883 11.9208C15.4117 10.9158 15.5 9.63559 15.5 8C15.5 6.36441 15.4117 5.08421 15.1883 4.07916C14.9662 3.07979 14.6173 2.3834 14.1169 1.88305C13.6166 1.3827 12.9202 1.03376 11.9208 0.811654C10.9158 0.588291 9.63559 0.5 8 0.5C6.36441 0.5 5.08421 0.588291 4.07916 0.811654C3.0798 1.03376 2.3834 1.3827 1.88305 1.88305C1.3827 2.3834 1.03376 3.07979 0.811654 4.07916C0.588291 5.08421 0.5 6.36441 0.5 8Z"
+                                stroke="#5920BC" stroke-opacity="0.25" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.66671 5.33333L9.33337 8L6.66671 10.6667" stroke="#5920BC" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="grid-column cell8">
+                <div class="content">
+                    <h3>Plumbing repair</h3>
+                    <p>
+                        Are you looking for a plumber? Plumbing pros provide affordable
+                        services for all your home...!
+                    </p>
+                    <a href="">Book Now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M0.5 8C0.5 9.63559 0.588291 10.9158 0.811654 11.9208C1.03376 12.9202 1.3827 13.6166 1.88305 14.1169C2.3834 14.6173 3.0798 14.9662 4.07916 15.1883C5.08421 15.4117 6.36441 15.5 8 15.5C9.63559 15.5 10.9158 15.4117 11.9208 15.1883C12.9202 14.9662 13.6166 14.6173 14.1169 14.1169C14.6173 13.6166 14.9662 12.9202 15.1883 11.9208C15.4117 10.9158 15.5 9.63559 15.5 8C15.5 6.36441 15.4117 5.08421 15.1883 4.07916C14.9662 3.07979 14.6173 2.3834 14.1169 1.88305C13.6166 1.3827 12.9202 1.03376 11.9208 0.811654C10.9158 0.588291 9.63559 0.5 8 0.5C6.36441 0.5 5.08421 0.588291 4.07916 0.811654C3.0798 1.03376 2.3834 1.3827 1.88305 1.88305C1.3827 2.3834 1.03376 3.07979 0.811654 4.07916C0.588291 5.08421 0.5 6.36441 0.5 8Z"
+                                stroke="#5920BC" stroke-opacity="0.25" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.66671 5.33333L9.33337 8L6.66671 10.6667" stroke="#5920BC" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="grid-column cell9">
+                <div class="content">
+                    <h3>Plumbing repair</h3>
+                    <p>
+                        Are you looking for a plumber? Plumbing pros provide affordable
+                        services for all your home...!
+                    </p>
+                    <a href="">Book Now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M0.5 8C0.5 9.63559 0.588291 10.9158 0.811654 11.9208C1.03376 12.9202 1.3827 13.6166 1.88305 14.1169C2.3834 14.6173 3.0798 14.9662 4.07916 15.1883C5.08421 15.4117 6.36441 15.5 8 15.5C9.63559 15.5 10.9158 15.4117 11.9208 15.1883C12.9202 14.9662 13.6166 14.6173 14.1169 14.1169C14.6173 13.6166 14.9662 12.9202 15.1883 11.9208C15.4117 10.9158 15.5 9.63559 15.5 8C15.5 6.36441 15.4117 5.08421 15.1883 4.07916C14.9662 3.07979 14.6173 2.3834 14.1169 1.88305C13.6166 1.3827 12.9202 1.03376 11.9208 0.811654C10.9158 0.588291 9.63559 0.5 8 0.5C6.36441 0.5 5.08421 0.588291 4.07916 0.811654C3.0798 1.03376 2.3834 1.3827 1.88305 1.88305C1.3827 2.3834 1.03376 3.07979 0.811654 4.07916C0.588291 5.08421 0.5 6.36441 0.5 8Z"
+                                stroke="#5920BC" stroke-opacity="0.25" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.66671 5.33333L9.33337 8L6.66671 10.6667" stroke="#5920BC" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .register_btn a {
+            text-decoration: none;
+            color: #2871AA;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+
+        }
+
+        body {
+            background-image: url('new-tech 1.png');
+            background-position: center center;
+            background-size: cover;
+            background-repeat: none;
+            overflow-y: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            max-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .hexagon {
+            width: 420px;
+            height: 476px;
+            background-color: white;
+            position: relative;
+            clip-path: polygon(50% 0%, 150% 25%, 150% 75%, 50% 100%, -50% 75%, -50% 25%);
+            padding: 52px 55px 32px 52px;
+        }
+
+        h1 {
+            padding-top: 0px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid black;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 40px;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            font-family: sans-serif;
+            font-weight: 700;
+
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .inputContainer {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 16px;
+            width: 100%;
+        }
+
+        .inputContainer input {
+            padding: 6px;
+            border-radius: 5px;
+            border: 0px solid;
+            background-color: #F4F4F4;
+        }
+
+        .sign_in_btn,
+        .register_btn {
+            padding: 8px 40px;
+        }
+
+        .sign_in_btn {
+            border-radius: 10px;
+            background: #2871AA;
+            border: none;
+            cursor: pointer;
+            color: #FFF;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .register_btn {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn_container {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            gap: 20px
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="hexagon">
+            <div>
+                <h1>Sign in</h1>
+            </div>
+            <form action="">
+                <div class="inputContainer">
+                    <label for="Email">
+                        Email
+                    </label>
+                    <input type="text" name="Email" id="Email">
+                </div>
+                <div class="inputContainer">
+                    <label for="Password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="btn_container">
+                    <button class="sign_in_btn" type="submit">
+                        Sign In
+                    </button>
+                    <button class="register_btn">
+                        <a href="register.html">Register</a>
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
